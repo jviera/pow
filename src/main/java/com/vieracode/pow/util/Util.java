@@ -4,16 +4,6 @@ import com.vieracode.pow.exception.VieraCodeMathException;
 
 public final class Util {
 
-	public static double pow(double base, double exponente) {
-		if (exponente == 0)
-			return 1;
-		else if (exponente > 0) {
-			return mult(base, pow(base, exponente - 1));
-		} else {
-			return div(pow(base, exponente + 1), base);
-		}
-	}
-
 	public static double pow(int base, int exponente) {
 		if (exponente == 0)
 			return 1;
