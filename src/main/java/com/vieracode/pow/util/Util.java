@@ -4,6 +4,12 @@ import com.vieracode.pow.exception.VieraCodeMathException;
 
 public final class Util {
 
+	/**
+	 * Función de POW sin usar multiplicación/división ni las funciones de las mismas.
+	 * @param base
+	 * @param exponente
+	 * @return
+	 */
 	public static double pow(int base, int exponente) {
 		if (exponente == 0)
 			return 1;
